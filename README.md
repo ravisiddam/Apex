@@ -19,7 +19,6 @@ Apex
 
 `code`
 
-[Admin2Dev](http://admin2dev.com)
 
 ---
 
