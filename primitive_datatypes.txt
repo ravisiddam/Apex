@@ -1,0 +1,83 @@
+Datatypes:
+Boolean a = true;
+Boolean b = false;
+Integer c = 2;
+Decimal d = 20000000.0000000002;
+Double e = 1000000.000000000000000001;
+Long f = -1000;
+Integer a1 = 45;
+Integer b1 = 18;
+Decimal c1 = 4.0;
+Decimal d1 = 5.0;
+System.debug(a1 + b1 / c1 * d1);
+system.debug(a);
+system.debug(b);
+system.debug(c);
+system.debug(d);
+system.debug(e);
+system.debug(f);
+Integer g = 4;
+if (g==4){
+    System.debug('G is 4!');
+  }
+if (g==5) {
+    System.debug('G is 5!');
+}
+
+Integer h = 10;
+switch on h{
+  when 10{
+    System.debug('H is 10');
+  }
+  when 20{
+    h++;
+    System.debug('H is ' + h);
+  }
+  when else {
+    h *= 40;
+    System.debug('H is ' + h);
+  }
+}
+List<String> names = new List<String>();
+names.add('Bruce');
+names.add('Ravi');
+names.add('Francis');
+System.debug(names[1]);
+
+Set<String> names2 = new Set<String>();
+names2.add('Harshdeep');
+names2.add('Cobey');
+names2.add('Zerab');
+names2.add('Cobey');
+System.debug(names2);
+
+Map<String, String> curr = new Map<String, String>();
+curr.put('US', 'Dollar');
+curr.put('Germany', 'Euro');
+curr.put('India', 'Rupee');
+System.debug(curr.get('Germany'));
+
+for (String name: names){
+    system.debug(name);
+}
+
+List<String> names3=new List<String>();
+names3.add('Name 1');
+names3.add('Name 2');
+names3.add('Name 3');
+names3.add('Name 4');
+
+List<String> surnames=new List<String>();
+surnames.add('Name 3');
+surnames.add('Name 1');
+surnames.add('Name 4');
+surnames.add('Name 2');
+
+for (String outerLoop: names3) {
+  for (String innerLoop: surnames) {
+    if (outerLoop==innerLoop) {
+      System.debug(outerLoop + ' ' +innerLoop); //To add a space between both values
+    }
+  }
+}
+
